@@ -15,4 +15,3 @@ GetStyle
 
 .. automodule:: styles.styles
    :members:
-
