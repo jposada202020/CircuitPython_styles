@@ -34,7 +34,11 @@ or individual libraries can be installed using
 Usage Example
 =============
 
-See the examples directory for usage examples
+See the examples directory for usage examples.
+
+.. figure:: styles.gif
+  :scale: 70 %
+  :alt: Example of the library possibilities
 
 Contributing
 ============
