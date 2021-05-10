@@ -8,7 +8,7 @@ Ensure your device works with this simple test.
     :linenos:
 
 Advanced test
-------------
+-------------
 
 Shows different graphical elements changing styles on the fly.
 
