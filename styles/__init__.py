@@ -49,6 +49,8 @@ def apply_style(target, style):
     """
     text_display = ["Label", "Bitmap_label"]
     annotation_widget = ["Annotation"]
+    progress_bar = ["HorizontalProgressBar"]
+    buttons = ["Button"]
 
     identifier = target.__class__.__name__
 
@@ -57,6 +59,15 @@ def apply_style(target, style):
         target.background_color = style["BACKGROUND"]
     elif identifier in annotation_widget:
         target.text_color = style["TEXT"]
+    elif identifier in progress_bar:
+        target.bar_color = style["BACKGROUND"]
+        target.border_color = style["LINE_COLOR"]
+    elif identifier in buttons:
+        target.fill_color = style["BACKGROUND"]
+        target.label_color = style["TEXT"]
+        target.outline_color = style["BORDER"]
+    else:
+        raise Exception("Not yet implemented")
 
 
 def color_to_tuple(value):
