@@ -37,7 +37,6 @@ Usage Example
 See the examples directory for usage examples.
 
 .. figure:: https://github.com/jposada202020/CircuitPython_styles/blob/main/docs/styles.gif
-  :scale: 70 %
   :alt: Example of the library possibilities
 
 Contributing
