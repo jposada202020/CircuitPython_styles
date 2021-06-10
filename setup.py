@@ -22,14 +22,14 @@ with open(path.join(here, "README.rst"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="community-circuitpython-styles",
+    name="circuitpython-styles",
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
     description="Dynamic style helper for CircuitPython graphical elements",
     long_description=long_description,
     long_description_content_type="text/x-rst",
     # The project's main homepage.
-    url="https://github.com/lesamouraipourpre/Community_CircuitPython_Styles.git",
+    url="https://github.com/jposada202020/CircuitPython_styles.git",
     # Author details
     author="Jose David M.",
     author_email="",
@@ -51,5 +51,5 @@ setup(
     keywords="adafruit blinka circuitpython micropython styles widget displayio color widget ",
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=["community_styles"],
+    packages=["styles"],
 )
