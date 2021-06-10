@@ -36,7 +36,7 @@ Usage Example
 
 See the examples directory for usage examples.
 
-.. image:: https://github.com/jposada202020/CircuitPython_styles/blob/main/docs/styles.gif
+.. figure:: https://github.com/jposada202020/CircuitPython_styles/blob/main/docs/styles.gif
   :alt: Example of the library possibilities
 
 Contributing
