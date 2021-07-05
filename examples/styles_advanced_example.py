@@ -13,6 +13,8 @@ from adafruit_progressbar.horizontalprogressbar import (
     HorizontalProgressBar,
     HorizontalFillDirection,
 )
+from adafruit_bitmap_font import bitmap_font
+from adafruit_button import Button
 from styles import apply_style
 from styles.styles import (
     DarkBlue,
@@ -21,8 +23,6 @@ from styles.styles import (
     BrownBlue,
     BrightColors,
 )
-from adafruit_bitmap_font import bitmap_font
-from adafruit_button import Button
 
 
 display = board.DISPLAY
