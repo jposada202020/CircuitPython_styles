@@ -13,8 +13,8 @@ from adafruit_progressbar.horizontalprogressbar import (
     HorizontalProgressBar,
     HorizontalFillDirection,
 )
-from adafruit_styles import apply_style
-from adafruit_styles.styles import (
+from styles import apply_style
+from styles.styles import (
     DarkBlue,
     BlueMono,
     GreenMono,
@@ -30,7 +30,7 @@ display = board.DISPLAY
 # Creating a Label
 font = bitmap_font.load_font("../fonts/Helvetica-Bold-16.bdf")
 text_area = label.Label(font, text="Hello world", x=30, y=30)
-main_group = displayio.Group(max_size=3)
+main_group = displayio.Group()
 main_group.append(text_area)
 
 # Creating a Progress Bar
@@ -44,8 +44,8 @@ main_group.append(progress_bar)
 
 # Creating a Button
 button = Button(
-    x=110,
-    y=120,
+    x=display.width // 2,
+    y=display.height // 2,
     width=100,
     height=50,
     style=Button.ROUNDRECT,
