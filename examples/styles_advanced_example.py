@@ -9,6 +9,7 @@ import time
 import board
 import displayio
 from adafruit_display_text import label
+from adafruit_display_text.scrolling_label import ScrollingLabel
 from adafruit_progressbar.horizontalprogressbar import (
     HorizontalProgressBar,
     HorizontalFillDirection,
@@ -57,6 +58,16 @@ button = Button(
 )
 main_group.append(button)
 
+# Creating a Scrolling Label
+my_scrolling_label = ScrollingLabel(
+    font,
+    text="Hello world CircuitPython scrolling label",
+    max_characters=20,
+    animate_time=0.3,
+    x=30,
+    y=200,
+)
+main_group.append(my_scrolling_label)
 # Preparing the Colors to display
 colors_change = [DarkBlue, BlueMono, GreenMono, BrownBlue, BrightColors]
 display.show(main_group)
@@ -68,6 +79,12 @@ while True:
     apply_style(text_area, colors_change[counter])
     apply_style(progress_bar, colors_change[counter])
     apply_style(button, colors_change[counter])
+    apply_style(my_scrolling_label, colors_change[counter])
+    current_time_counter = time.time()
+    while True:
+        my_scrolling_label.update()
+        if time.time() - current_time_counter > 4:
+            break
     display.refresh()
-    time.sleep(2)
+    time.sleep(4)
     counter = counter + 1

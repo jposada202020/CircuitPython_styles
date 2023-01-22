@@ -16,7 +16,19 @@ Introduction
     :target: https://github.com/psf/black
     :alt: Code Style: Black
 
-Library helper to add syles to CircuitPython display functions
+Library helper to add styles to CircuitPython display functions
+CircuitPython widgets supported:
+
+* Label
+* Bitmaplabel
+* ScrollingLabel
+* ProgressBar
+* Button
+
+Other CircuitPython Widgets in the Comunity Bundle
+
+* Annotation
+
 
 
 Dependencies
