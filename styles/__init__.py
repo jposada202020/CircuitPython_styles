@@ -47,7 +47,7 @@ def apply_style(target, style):
     The function will verify the object and apply the changes according to the features available
 
     """
-    text_display = ["Label", "Bitmap_label"]
+    text_display = ["Label", "Bitmap_label", "ScrollingLabel"]
     annotation_widget = ["Annotation"]
     progress_bar = ["HorizontalProgressBar"]
     buttons = ["Button"]

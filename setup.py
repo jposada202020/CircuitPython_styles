@@ -32,7 +32,7 @@ setup(
     url="https://github.com/jposada202020/CircuitPython_styles.git",
     # Author details
     author="Jose David M.",
-    author_email="",
+    author_email="styles@mailmeto.mozmail.com",
     install_requires=["Adafruit-Blinka"],
     # Choose your license
     license="MIT",
