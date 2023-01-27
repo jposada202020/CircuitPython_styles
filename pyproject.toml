@@ -17,7 +17,7 @@ readme = "README.rst"
 authors = [
     {name = "Jose D. Montoya", email = "styles@mailmeto.mozmail.com"}
 ]
-urls = {Homepage = "https://github.com/jposada202020/CircuitPython_styles"}
+urls = {Homepage = "https://github.com/jposada202020/CircuitPython_styles.git"}
 keywords = [
     "hardware",
     "micropython",
