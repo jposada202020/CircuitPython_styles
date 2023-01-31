@@ -7,6 +7,9 @@ Display Text style definitions. Based on the PySimpleGui styles used under the L
 """
 # pylint: disable=invalid-name, too-few-public-methods
 
+__version__ = "0.0.0-auto.0"
+__repo__ = "https://github.com/jposada202020/CircuitPython_styles.git"
+
 
 class GetStyle:
     """
