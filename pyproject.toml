@@ -42,7 +42,7 @@ classifiers = [
 dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
-packages = ["CircuitPython_Styles"]
+packages = ["styles"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
