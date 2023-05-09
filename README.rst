@@ -36,6 +36,7 @@ CircuitPython widgets supported:
 Other CircuitPython Widgets in the Comunity Bundle
 
 * Annotation
+* ListSelect
 
 
 
