@@ -12,7 +12,7 @@ try:
 except ImportError:
     pass
 
-
+# pylint: disable=protected-access
 def apply_style(target, style):
     """
     :param target: widget object
@@ -47,6 +47,7 @@ def apply_style(target, style):
     The function will verify the object and apply the changes according to the features available
 
     """
+    list_select = ["ListSelect"]
     text_display = ["Label", "Bitmap_label", "ScrollingLabel"]
     annotation_widget = ["Annotation"]
     progress_bar = ["HorizontalProgressBar"]
@@ -54,7 +55,10 @@ def apply_style(target, style):
 
     identifier = target.__class__.__name__
 
-    if identifier in text_display:
+    if identifier in list_select:
+        target._label.color = style["TEXT"]
+        target._label.background_color = style["BACKGROUND"]
+    elif identifier in text_display:
         target.color = style["TEXT"]
         target.background_color = style["BACKGROUND"]
     elif identifier in annotation_widget:
