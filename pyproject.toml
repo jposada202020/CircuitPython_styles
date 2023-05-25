@@ -15,7 +15,7 @@ description = "Dynamic style helper for CircuitPython graphical elements"
 version = "0.0.0+auto.0"
 readme = "README.rst"
 authors = [
-    {name = "Jose D. Montoya", email = "styles@mailmeto.mozmail.com"}
+    {name = "JDM", email = "styles@mozmail.com"}
 ]
 urls = {Homepage = "https://github.com/jposada202020/CircuitPython_styles.git"}
 keywords = [
